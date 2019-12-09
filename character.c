@@ -1,15 +1,14 @@
 #include<stdio.h>
 int main()
 {
-	char ch;
-	scanf("%c",&ch);
-	if(ch>=65&&ch<=90)
-	printf("upper case alphabet");
-	else if (ch>=97&&ch<=122)
-	printf("lower case alphabet");
-	else if (ch>=48&&ch<=57)
-	printf("it is digit");
-	else
-	printf("it is special character");
-	return 0;
+   int i,j;
+   for(i=1;i<=5;i++)
+   {
+       for(j=1;j<=i;j++)
+       {
+           printf("%c",64+j);
+       }
+       printf("\n");
+   }
+   return 0;
 }
